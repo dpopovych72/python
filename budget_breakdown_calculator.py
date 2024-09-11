@@ -17,7 +17,9 @@ budget = int(input("What's your budget this month?"))
 housing_percentage = housing/budget*100
 print(housing_percentage ,"%")
 utilities_percentage = utilities/budget*100
+print(utilities_percentage , "%")
 groceries_percentage = groceries/budget*100
+print(groceries_percentage , "%")
 transportation_percentage = transportation/budget*100
 health_care_percentage = health_care/budget*100
 personal_care_percentage = personal_care/budget*100
