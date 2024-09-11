@@ -14,7 +14,11 @@ lb_value_4 = kg_value_4 * conversion_factor
 
 # Output the results 
 
-print(lb_value_1 , " pounds is equal to" , kg_value_1,"kilograms")
-print(lb_value_2 , " pounds is equal to" , kg_value_2,"kilograms")
-print(lb_value_3 , " pounds is equal to" , kg_value_3,"kilograms")
-print(lb_value_4 , " pounds is equal to" , kg_value_4,"kilograms")
+print(f"{lb_value_1:0.2f} pounds is equal to  {kg_value_1} kilograms")
+print(f"{lb_value_2:0.2f} pounds is equal to {kg_value_2} kilograms")
+print(f"{lb_value_3:0.2f} pounds is equal to  {kg_value_3} kilograms")
+print(f"{lb_value_4:0.2f} pounds is equal to {kg_value_4} kilograms")
+
+# print(f"pounds{lb_value_4 :0.2f}") = right , "f round up" works only with the string 
+# print(f(lb_value_4:0.2f)) = wrong 
+# print(f{lb_value_4:0.2f}) = wrong
