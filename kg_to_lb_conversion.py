@@ -6,7 +6,9 @@ kg_value_2 = 23
 kg_value_3 = 55
 kg_value_4 = 83
 
+# conversion factor : 1 kg = 2.20462 lb
 conversion_factor = 2.20462
+
 lb_value_1 = kg_value_1 * conversion_factor 
 lb_value_2 = kg_value_2 * conversion_factor
 lb_value_3 = kg_value_3 * conversion_factor
