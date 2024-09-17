@@ -19,24 +19,41 @@ budget = int(input("What's your budget this month ?"))
  of budget spent on each of the categories """
 
 housing_percentage = housing/budget*100
-print(f"{housing_percentage:0.2f}%" )
+print( f"\nHousing took {housing_percentage:0.2f}% of budget " )
+
 utilities_percentage = utilities/budget*100
-print(f"{utilities_percentage:0.2f}%" )
+print( f"Utilities took {utilities_percentage:0.2f}% of budget " )
+
 groceries_percentage = groceries/budget*100
-print(f"{groceries_percentage:0.2f}%" )
+print( f"Groceries took {groceries_percentage:0.2f}% of budget " )
+
 transportation_percentage = transportation/budget*100
-print(f"{transportation_percentage:0.2f}%" )
+print( f"Transportation took {transportation_percentage:0.2f}% of budget " )
+
 health_care_percentage = health_care/budget*100
-print(f"{health_care_percentage:0.2f}%" )
+print( f"Healthcare took {health_care_percentage:0.2f}% of budget " )
+
 personal_care_percentage = personal_care/budget*100
-print(f"{personal_care_percentage:0.2f}%" )
+print( f"Personal care took {personal_care_percentage:0.2f}% of budget " )
+
 clothing_percentage = clothing/budget*100
-print(f"{clothing_percentage:0.2f}%" )
+print( f"Clothing took{clothing_percentage:0.2f}% of budget " )
+
 debt_percentage = debt/budget*100
-print(f"{debt_percentage:0.2f}%" )
+print( f"Debt took {debt_percentage:0.2f}% of budget " )
 
+# Calculates the ammount of money spent overall 
 budget_spent = housing + utilities + groceries + transportation + health_care + personal_care + clothing + debt
-print(budget_spent)
+print( "\nYou spent "+(str)(budget_spent)+"$ " )
 
+# Calculates the percentage of budget spent 
 budget_spent_percentage = housing_percentage + utilities_percentage + groceries_percentage + transportation_percentage + health_care_percentage + personal_care_percentage + clothing_percentage + debt_percentage
-print(budget_spent_percentage)
+print( f"That would be {budget_spent_percentage:0.02f}% of your budget this month " )
+
+if budget_spent>budget :
+    print("\nPlease, try to manage your money better " )
+elif budget_spent == budget :
+    print("\nWell , that is very tight" )
+else :
+    spare_money = budget - budget_spent
+    print("\nNice job , you have " + (str)(spare_money)+ "$ to buy some more candies " ) 
