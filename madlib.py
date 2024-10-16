@@ -53,7 +53,7 @@ star_name = input("Write a name of somebody you love ")
 feelings = input("How do you feel right now ? ")
 organization = input("Write a name of an organization ")
 
-# Make every answer a parameter in the function 
+# Make every answer a parameter in the function and call the function in the program
 little_star(size=object_size,world=world_name,narrator=narrator_name,child_1=child_name1,child_2=child_name2
 ,star=star_name,emotion=feelings,friends=organization)
 
