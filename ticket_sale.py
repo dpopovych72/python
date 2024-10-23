@@ -11,14 +11,19 @@ buy_seat = int(input("Please enter a seat that you would like to take " ))
 def main():
     if buy_seat in free_seats :
         print(f"Seat {buy_seat} is available")
-        want_to_take = bool(input("Enter 'True' if you want to take it , enter 'False' if not "))
-        if want_to_take == True :
+        take_it = input(f"Do you want to take it ? yes/no ")
+        if take_it in ["yes","y"] :
             print(f"You took seat : {buy_seat}")
             free_seats.remove(buy_seat)
             print(f"Free seats left : ", free_seats)
-        if want_to_take == False :
-            pick_another_seat = int(input("Pick another seat"))
-            print("You picked seat:" , pick_another_seat)
+        if take_it in["no","n"] :
+            plan_to_pick = input("Do you plan to pick any seat ? (yes/no)" )
+            while plan_to_pick in ["yes","y"]:
+                pick_another_seat = int(input("Pick another seat"))
+                print("You picked seat:" , pick_another_seat)
+                want_another_seat = input("Do you want to pick another seat ?(yes/no)" )
+            else :
+                print("You are free to leave " )
     else :
         print("Seat is not available ")
 
