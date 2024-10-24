@@ -4,10 +4,11 @@ bought_tickets =[]
 def main():
     how_many=int(input("How much tickets do you want? "))
     for i in range(how_many):
-        ticket_num = int(input(f"What would be your {i} ticket? "))
+        ticket_num = int(input(f"What would be your ticket number {i} ? "))
         if ticket_num in free_tickets :
             free_tickets.remove(ticket_num)
             bought_tickets.append(ticket_num)
         else:
             print("This ticket is already taken ")
     print("You bought those tickets : ",bought_tickets)
+main()
