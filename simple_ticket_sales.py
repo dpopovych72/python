@@ -1,3 +1,6 @@
+"""I had in total about of 4-5 attempts making this code already , and couldn't finished any of them because I made them too complicated and got lost.
+This time I decided to make this program small and only made what was required .
+"""
 free_tickets=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] # Available tickets
 bought_tickets =[] # Tickets that a user bought from the list free_tickets
 
