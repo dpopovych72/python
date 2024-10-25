@@ -22,13 +22,13 @@ def main():
                 ticket_num = int(input(f"Choose another ticket number {i} ? "))
                 if ticket_num in free_tickets : # Checks if the ticket is available 
                     free_tickets.remove(ticket_num) 
-            bought_tickets.append(ticket_num)
-            print("You bought ticket :",ticket_num)
+            bought_tickets.append(ticket_num) # important to put it outside of the while loop , otherwise the program stucks in it
+            print("You bought ticket :",ticket_num) # if it is being appended inside the while loop , it is suitable to repeat the while loop
         else :
             print("You wrote invalid ticket")
         if ticket_num == 0:
             print("stopping the program ")
-            break
+            break # if the user enters 0 at any point , the program will stop 
     print("\nYou bought those tickets : ",bought_tickets)
     print("Goodbye")
         
