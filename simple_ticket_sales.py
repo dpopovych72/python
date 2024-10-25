@@ -28,7 +28,7 @@ def main():
             print("You wrote invalid ticket")
         if ticket_num == 0:
             print("stopping the program ")
-            break # if the user enters 0 at any point , the program will stop 
+            break # if the user enters 0 at any point for ticket_num, the break statement will stop the program
     print("\nYou bought those tickets : ",bought_tickets)
     print("Goodbye")
         
