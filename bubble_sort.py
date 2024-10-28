@@ -27,7 +27,7 @@ def main():
         
 
     print(names) # sorted
-    names.reverse()
+    names.reverse()# the program does not see the list if I reverse it inside of the print function
     print(names) # reversed
 
 main()
