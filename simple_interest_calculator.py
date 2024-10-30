@@ -14,6 +14,6 @@ time_ammount = int(input("Write time (years) : "))
 
 # Use the provided values for parameters , and call the function 
 result = (calculate_interest(principal_ammount,rate_of_interest,time_ammount))
-print(f"The simple interest for a principal ammount of ${principal_ammount:0.02f}\n \
-at a rate of interest {rate_of_interest:0.02f}% \
-over a period of {time_ammount} years is $",result)
+print(f"The simple interest for a principal ammount of ${principal_ammount:,.02f}\n \
+at a rate of interest {rate_of_interest:,.02f}% \
+over a period of {time_ammount} years is ${result:,.02f}")
